@@ -1,0 +1,40 @@
+
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+/build
+/captures
+
+# IntelliJ IDEA project files
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Eclipse Project files
+.classpath
+.project
+.settings/
+
+# Android build
+bin/
+local.properties
+build/
+.gradle.idea/
+
+# OS auto gen
+# win
+Thumbs.db
+# os X
+.DS_Store
+将删除 .gitignore
+将删除 .idea/
+将删除 app/
+将删除 build.gradle
+将删除 gradle.properties
+将删除 gradle/
+将删除 gradlew
+将删除 gradlew.bat
+将删除 settings.gradle
