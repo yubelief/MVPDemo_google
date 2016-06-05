@@ -1,4 +1,4 @@
-package com.adouble.mvpdemotodoapp.view;
+package com.adouble.mvpdemotodoapp.module.userinfo;
 
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
@@ -8,9 +8,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.adouble.mvpdemotodoapp.R;
-import com.adouble.mvpdemotodoapp.bean.UserInfo;
-import com.adouble.mvpdemotodoapp.contract.UserInfoContract;
-import com.adouble.mvpdemotodoapp.presenter.UserInfoPresenter;
+import com.adouble.mvpdemotodoapp.model.bean.UserInfo;
 
 public class UserInfoActivity extends AppCompatActivity implements UserInfoContract.View, SwipeRefreshLayout.OnRefreshListener {
 

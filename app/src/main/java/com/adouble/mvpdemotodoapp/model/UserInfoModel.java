@@ -3,7 +3,7 @@ package com.adouble.mvpdemotodoapp.model;
 import android.os.Handler;
 import android.os.Looper;
 
-import com.adouble.mvpdemotodoapp.bean.UserInfo;
+import com.adouble.mvpdemotodoapp.model.bean.UserInfo;
 import com.adouble.mvpdemotodoapp.constant.ErrorConstant;
 
 /**

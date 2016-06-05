@@ -1,8 +1,8 @@
-package com.adouble.mvpdemotodoapp.contract;
+package com.adouble.mvpdemotodoapp.module.userinfo;
 
 import com.adouble.mvpdemotodoapp.BasePresenter;
 import com.adouble.mvpdemotodoapp.BaseView;
-import com.adouble.mvpdemotodoapp.bean.UserInfo;
+import com.adouble.mvpdemotodoapp.model.bean.UserInfo;
 
 /**
  * Created by double on 16-6-5.

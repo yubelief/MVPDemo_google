@@ -1,4 +1,4 @@
-package com.adouble.mvpdemotodoapp.bean;
+package com.adouble.mvpdemotodoapp.model.bean;
 
 /**
  * Created by double on 16-6-5.

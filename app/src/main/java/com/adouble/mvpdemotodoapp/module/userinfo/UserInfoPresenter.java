@@ -1,7 +1,6 @@
-package com.adouble.mvpdemotodoapp.presenter;
+package com.adouble.mvpdemotodoapp.module.userinfo;
 
-import com.adouble.mvpdemotodoapp.bean.UserInfo;
-import com.adouble.mvpdemotodoapp.contract.UserInfoContract;
+import com.adouble.mvpdemotodoapp.model.bean.UserInfo;
 import com.adouble.mvpdemotodoapp.model.IUserInfoModel;
 import com.adouble.mvpdemotodoapp.model.OnSucFaiListener;
 import com.adouble.mvpdemotodoapp.model.UserInfoModel;

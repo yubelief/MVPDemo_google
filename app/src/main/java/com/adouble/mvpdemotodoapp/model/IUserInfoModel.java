@@ -1,6 +1,6 @@
 package com.adouble.mvpdemotodoapp.model;
 
-import com.adouble.mvpdemotodoapp.bean.UserInfo;
+import com.adouble.mvpdemotodoapp.model.bean.UserInfo;
 
 /**
  * Created by double on 16-6-5.
