@@ -1,45 +1,42 @@
 package com.adouble.mvpdemotodoapp.model;
 
+import android.os.Handler;
+import android.os.Looper;
+
+import com.adouble.mvpdemotodoapp.bean.UserInfo;
+import com.adouble.mvpdemotodoapp.constant.ErrorConstant;
+
 /**
  * Created by double on 16-6-5.
  * Project: MVPDemotodoapp
  */
-public class UserInfoModel {
+public class UserInfoModel implements IUserInfoModel {
 
-    private String name;
-    private int age;
-    private String address;
 
-    public UserInfoModel(String name, int age, String address) {
-        this.name = name;
-        this.age = age;
-        this.address = address;
-    }
+    private OnSucFaiListener<UserInfo> mOnSucFaiListener;
 
-    public UserInfoModel() {
-    }
+    private static Handler sHandler = new Handler(Looper.getMainLooper());
 
-    public String getName() {
-        return name;
-    }
+    @Override
+    public void getUserInfo(long id, OnSucFaiListener<UserInfo> onSucFaiListener) {
+        mOnSucFaiListener = onSucFaiListener;
+        sHandler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                // get result by id
+                double random = Math.random();
+                if (random < 0.5) {
+                    UserInfo userInfo = new UserInfo("double", 100, "beijing");
+                    if (mOnSucFaiListener != null) {
+                        mOnSucFaiListener.onSuccess(userInfo);
+                    }
+                } else {
+                    if (mOnSucFaiListener != null) {
+                        mOnSucFaiListener.onError(ErrorConstant.ERROR_NETWORK);
+                    }
+                }
+            }
+        }, 3000);
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
     }
 }

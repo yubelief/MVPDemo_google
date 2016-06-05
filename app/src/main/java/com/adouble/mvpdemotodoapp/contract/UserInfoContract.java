@@ -2,7 +2,7 @@ package com.adouble.mvpdemotodoapp.contract;
 
 import com.adouble.mvpdemotodoapp.BasePresenter;
 import com.adouble.mvpdemotodoapp.BaseView;
-import com.adouble.mvpdemotodoapp.model.UserInfoModel;
+import com.adouble.mvpdemotodoapp.bean.UserInfo;
 
 /**
  * Created by double on 16-6-5.
@@ -17,11 +17,13 @@ public interface UserInfoContract {
 
     interface View extends BaseView<Presenter>{
 
-        void showLoading();
+        void showLoading(boolean isLoadMore);
 
         void dismissLoading();
 
-        void showUserInfo(UserInfoModel userInfoModel); // 将网络请求的信息回调
+        void showUserInfo(UserInfo userInfoModel); // 将网络请求的信息回调
+
+        void showError(String errorConstant);
 
         long loadUserId();
 
